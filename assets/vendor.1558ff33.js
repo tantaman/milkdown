@@ -106,4 +106,4 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
       position: relative;
       width: `,`;
       height: `,`;
-    `])),Cr.cssValue(n.getSize()),Cr.cssValue(n.getSize()))},n}return t.prototype.render=function(){var n=this.props,r=n.loading,l=n.css;return r?Ft.jsx("span",{css:[this.wrapper(),l]},Ft.jsx("span",{css:this.style(1)}),Ft.jsx("span",{css:this.style(2)})):null},t.defaultProps=Cr.sizeDefaults(60),t}(Bm.PureComponent),Gm=Zf.default=Hm,Tc,Rc,Lc,Mc;export{Ym as H,wh as L,Xm as N,Qm as R,Gm as _,Qp as a,Km as b,Wp as c,Hc as d,Xh as e,se as f,vc as g,Tu as i,P as r,ql as s,wr as u};
+    `])),Cr.cssValue(n.getSize()),Cr.cssValue(n.getSize()))},n}return t.prototype.render=function(){var n=this.props,r=n.loading,l=n.css;return r?Ft.jsx("span",{css:[this.wrapper(),l]},Ft.jsx("span",{css:this.style(1)}),Ft.jsx("span",{css:this.style(2)})):null},t.defaultProps=Cr.sizeDefaults(60),t}(Bm.PureComponent),Gm=Zf.default=Hm,Tc,Rc,Lc,Mc;export{Ym as H,wh as L,Xm as N,Qm as R,Gm as _,Qp as a,Km as b,Wp as c,Hc as d,Xh as e,se as f,P as r,wr as u};
