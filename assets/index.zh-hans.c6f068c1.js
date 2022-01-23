@@ -1,6 +1,6 @@
 var n=`# Milkdown
 
-![greeting bear](https://preview.redd.it/us7w1x2zx8461.jpg?auto=webp&s=077a73d5c08aec0bc0fb48c5e5be40c928467bb6)
+![greeting bear](/polar.jpeg)
 
 > Milkdown \u662F\u4E00\u4E2A\u6240\u89C1\u5373\u6240\u5F97\u7684\u7F16\u8F91\u5668\u6846\u67B6\u3002
 >
