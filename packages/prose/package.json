@@ -17,7 +17,7 @@
         "src"
     ],
     "dependencies": {
-        "@milkdown/exception": "workspace:*",
+        "@milkdown/exception": "^5.5.0",
         "@types/prosemirror-commands": "^1.0.4",
         "@types/prosemirror-dropcursor": "^1.0.2",
         "@types/prosemirror-gapcursor": "^1.0.4",

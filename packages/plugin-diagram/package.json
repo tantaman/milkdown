@@ -23,8 +23,8 @@
         "mermaid"
     ],
     "devDependencies": {
-        "@milkdown/core": "workspace:*",
-        "@milkdown/prose": "workspace:*"
+        "@milkdown/core": "^5.5.0",
+        "@milkdown/prose": "^5.5.0"
     },
     "peerDependencies": {
         "@milkdown/core": "^5.4.0",
@@ -32,7 +32,7 @@
     },
     "dependencies": {
         "@types/mermaid": "^8.2.7",
-        "@milkdown/utils": "workspace:*",
+        "@milkdown/utils": "^5.5.0",
         "mermaid": "^8.12.1",
         "nanoid": "^3.1.25",
         "tslib": "^2.3.1",

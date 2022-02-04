@@ -24,8 +24,8 @@
         "collaboration"
     ],
     "devDependencies": {
-        "@milkdown/core": "workspace:*",
-        "@milkdown/prose": "workspace:*",
+        "@milkdown/core": "^5.5.0",
+        "@milkdown/prose": "^5.5.0",
         "yjs": "^13.5.11"
     },
     "peerDependencies": {
@@ -34,7 +34,7 @@
         "yjs": "*"
     },
     "dependencies": {
-        "@milkdown/utils": "workspace:*",
+        "@milkdown/utils": "^5.5.0",
         "tslib": "^2.3.1",
         "y-prosemirror": "^1.0.9",
         "y-protocols": "^1.0.5"

@@ -21,16 +21,16 @@
         "milkdown plugin"
     ],
     "devDependencies": {
-        "@milkdown/core": "workspace:*",
-        "@milkdown/prose": "workspace:*",
-        "@milkdown/design-system": "workspace:*"
+        "@milkdown/core": "^5.5.0",
+        "@milkdown/prose": "^5.5.0",
+        "@milkdown/design-system": "^5.5.0"
     },
     "peerDependencies": {
         "@milkdown/core": "^5.4.0",
         "@milkdown/prose": "^5.4.0"
     },
     "dependencies": {
-        "@milkdown/utils": "workspace:*",
+        "@milkdown/utils": "^5.5.0",
         "smooth-scroll-into-view-if-needed": "^1.1.32",
         "tslib": "^2.3.1"
     }

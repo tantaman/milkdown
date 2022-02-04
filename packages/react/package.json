@@ -22,7 +22,7 @@
         "react"
     ],
     "dependencies": {
-        "@milkdown/utils": "workspace:*",
+        "@milkdown/utils": "^5.5.0",
         "nanoid": "^3.1.25",
         "tslib": "^2.3.1"
     },
@@ -33,8 +33,8 @@
         "@milkdown/prose": "^5.4.0"
     },
     "devDependencies": {
-        "@milkdown/core": "workspace:*",
-        "@milkdown/prose": "workspace:*",
+        "@milkdown/core": "^5.5.0",
+        "@milkdown/prose": "^5.5.0",
         "@types/react": "*",
         "@types/react-dom": "*",
         "react": "*",

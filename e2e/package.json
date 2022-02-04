@@ -16,12 +16,12 @@
         "style"
     ],
     "dependencies": {
-        "@milkdown/core": "workspace:*",
-        "@milkdown/design-system": "workspace:*",
-        "@milkdown/preset-commonmark": "workspace:*",
-        "@milkdown/preset-gfm": "workspace:*",
-        "@milkdown/prose": "workspace:*",
-        "@milkdown/theme-nord": "workspace:*",
+        "@milkdown/core": "^5.5.0",
+        "@milkdown/design-system": "^5.5.0",
+        "@milkdown/preset-commonmark": "^5.5.0",
+        "@milkdown/preset-gfm": "^5.5.0",
+        "@milkdown/prose": "^5.5.0",
+        "@milkdown/theme-nord": "^5.5.0",
         "tslib": "^2.3.1"
     },
     "devDependencies": {

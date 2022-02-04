@@ -23,13 +23,13 @@
         "markdown"
     ],
     "devDependencies": {
-        "@milkdown/prose": "workspace:*"
+        "@milkdown/prose": "^5.5.0"
     },
     "peerDependencies": {
         "@milkdown/prose": "^5.4.0"
     },
     "dependencies": {
-        "@milkdown/exception": "workspace:*",
+        "@milkdown/exception": "^5.5.0",
         "remark": "^14.0.1",
         "tslib": "^2.3.1",
         "unified": "^10.1.0"

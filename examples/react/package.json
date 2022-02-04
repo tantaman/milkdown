@@ -13,10 +13,10 @@
         "react-dom": "latest",
         "@types/react": "latest",
         "@types/react-dom": "latest",
-        "@milkdown/core": "workspace:*",
-        "@milkdown/preset-commonmark": "workspace:*",
-        "@milkdown/plugin-tooltip": "workspace:*",
-        "@milkdown/react": "workspace:*",
-        "@milkdown/theme-nord": "workspace:*"
+        "@milkdown/core": "^5.5.0",
+        "@milkdown/preset-commonmark": "^5.5.0",
+        "@milkdown/plugin-tooltip": "^5.5.0",
+        "@milkdown/react": "^5.5.0",
+        "@milkdown/theme-nord": "^5.5.0"
     }
 }

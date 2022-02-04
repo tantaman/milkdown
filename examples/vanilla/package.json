@@ -9,8 +9,8 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "@milkdown/core": "workspace:*",
-        "@milkdown/preset-commonmark": "workspace:*",
-        "@milkdown/theme-nord": "workspace:*"
+        "@milkdown/core": "^5.5.0",
+        "@milkdown/preset-commonmark": "^5.5.0",
+        "@milkdown/theme-nord": "^5.5.0"
     }
 }

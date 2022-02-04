@@ -23,10 +23,10 @@
         "gfm"
     ],
     "devDependencies": {
-        "@milkdown/core": "workspace:*",
-        "@milkdown/prose": "workspace:*",
-        "@milkdown/design-system": "workspace:*",
-        "@milkdown/preset-commonmark": "workspace:*"
+        "@milkdown/core": "^5.5.0",
+        "@milkdown/prose": "^5.5.0",
+        "@milkdown/design-system": "^5.5.0",
+        "@milkdown/preset-commonmark": "^5.5.0"
     },
     "peerDependencies": {
         "@milkdown/core": "^5.4.0",
@@ -34,7 +34,7 @@
         "@milkdown/preset-commonmark": "^5.4.0"
     },
     "dependencies": {
-        "@milkdown/utils": "workspace:*",
+        "@milkdown/utils": "^5.5.0",
         "remark-gfm": "^3.0.0",
         "tslib": "^2.3.1"
     }
