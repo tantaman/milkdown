@@ -40,7 +40,7 @@ export const codeFence = createNode<Keys, { languageList?: string[] }>((utils, o
             background-color: ${palette('background')};
             color: ${palette('neutral')};
             font-size: 0.85rem;
-            padding: 1.2rem 0.4rem 1.4rem;
+            padding: 1.2rem 0.8rem 1.4rem;
             border-radius: ${radius};
             font-family: ${font.typography};
 
@@ -217,105 +217,6 @@ export const codeFence = createNode<Keys, { languageList?: string[] }>((utils, o
         commands: (nodeType) => [createCmd(TurnIntoCodeFence, () => setBlockType(nodeType))],
         shortcuts: {
             [SupportedKeys.CodeFence]: createShortcut(TurnIntoCodeFence, 'Mod-Alt-c'),
-        },
-        view: (ctx) => (node, view, getPos) => {
-            const container = document.createElement('div');
-            const selectWrapper = document.createElement('div');
-            const select = document.createElement('ul');
-            const pre = document.createElement('pre');
-            const code = document.createElement('code');
-
-            const valueWrapper = document.createElement('div');
-            valueWrapper.className = 'code-fence_value';
-            const value = document.createElement('span');
-            valueWrapper.appendChild(value);
-            if (view.editable) {
-                valueWrapper.appendChild(ctx.get(themeToolCtx).slots.icon('downArrow'));
-            }
-
-            select.className = 'code-fence_select';
-            select.addEventListener('mousedown', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-
-                if (!view.editable) return;
-
-                const el = e.target;
-                if (!(el instanceof HTMLLIElement)) return;
-                const { tr } = view.state;
-
-                view.dispatch(
-                    tr.setNodeMarkup(getPos(), undefined, {
-                        fold: true,
-                        language: el.dataset['value'],
-                    }),
-                );
-            });
-            valueWrapper.addEventListener('mousedown', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-
-                if (!view.editable) return;
-                const { tr } = view.state;
-
-                view.dispatch(
-                    tr.setNodeMarkup(getPos(), undefined, {
-                        fold: false,
-                        language: container.dataset['language'],
-                    }),
-                );
-            });
-            document.addEventListener('mousedown', () => {
-                if (!view.editable || select.dataset['fold'] === 'true') return;
-
-                const { tr } = view.state;
-
-                view.dispatch(
-                    tr.setNodeMarkup(getPos(), undefined, {
-                        fold: true,
-                        language: container.dataset['language'],
-                    }),
-                );
-            });
-
-            (options?.languageList || languageOptions).forEach((lang) => {
-                const option = document.createElement('li');
-                option.className = 'code-fence_select-option';
-                option.innerText = lang || '--';
-                select.appendChild(option);
-                option.setAttribute('data-value', lang);
-            });
-
-            code.spellcheck = false;
-            selectWrapper.className = 'code-fence_select-wrapper';
-            selectWrapper.contentEditable = 'false';
-            selectWrapper.append(valueWrapper);
-            selectWrapper.append(select);
-            pre.append(code);
-            const codeContent = document.createElement('div');
-            code.append(codeContent);
-            codeContent.style.whiteSpace = 'inherit';
-
-            container.append(selectWrapper, pre);
-            container.setAttribute('class', utils.getClassName(node.attrs, 'code-fence', style));
-            container.setAttribute('data-language', node.attrs['language']);
-            value.innerText = node.attrs['language'] || '--';
-            select.setAttribute('data-fold', node.attrs['fold'] ? 'true' : 'false');
-
-            return {
-                dom: container,
-                contentDOM: codeContent,
-                update: (updatedNode) => {
-                    if (updatedNode.type.name !== id) return false;
-
-                    const lang = updatedNode.attrs['language'];
-                    container.dataset['language'] = lang;
-                    value.innerText = lang || '--';
-                    select.setAttribute('data-fold', updatedNode.attrs['fold'] ? 'true' : 'false');
-
-                    return true;
-                },
-            };
         },
     };
 });
