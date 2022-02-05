@@ -15,13 +15,14 @@ export const blockquote = createNode<Keys>((utils) => {
     const style = utils.getStyle(
         (themeTool, { css }) =>
             css`
-                padding-left: 1.875rem;
+                padding-left: 1rem;
                 line-height: 1.75rem;
                 border-left: 4px solid ${themeTool.palette('primary')};
                 * {
                     font-size: 1rem;
                     line-height: 1.5rem;
                 }
+                margin-left: 0px;
             `,
     );
 

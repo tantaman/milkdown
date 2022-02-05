@@ -63,7 +63,6 @@ export const heading = createNode<Keys>((utils) => {
 
             return css`
                 ${headingMap[level] || ''}
-                margin: 2.5rem 0 !important;
                 font-weight: 400;
             `;
         });
